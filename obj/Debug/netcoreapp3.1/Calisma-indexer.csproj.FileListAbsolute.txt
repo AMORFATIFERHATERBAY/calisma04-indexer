@@ -1,0 +1,12 @@
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/bin/Debug/netcoreapp3.1/Calisma-indexer.deps.json
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/bin/Debug/netcoreapp3.1/Calisma-indexer.runtimeconfig.json
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/bin/Debug/netcoreapp3.1/Calisma-indexer.runtimeconfig.dev.json
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/bin/Debug/netcoreapp3.1/Calisma-indexer.dll
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/bin/Debug/netcoreapp3.1/Calisma-indexer.pdb
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.csprojAssemblyReference.cache
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.AssemblyInfoInputs.cache
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.AssemblyInfo.cs
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.csproj.CoreCompileInputs.cache
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.dll
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.pdb
+/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/Debug/netcoreapp3.1/Calisma-indexer.genruntimeconfig.cache
