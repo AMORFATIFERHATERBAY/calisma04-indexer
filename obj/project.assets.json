@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/Calisma-indexer.csproj",
+      "projectUniqueName": "/Users/amorfati/Desktop/dotnet-deneme/calisma04-indexer/Calisma-indexer.csproj",
       "projectName": "Calisma-indexer",
-      "projectPath": "/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/Calisma-indexer.csproj",
+      "projectPath": "/Users/amorfati/Desktop/dotnet-deneme/calisma04-indexer/Calisma-indexer.csproj",
       "packagesPath": "/Users/amorfati/.nuget/packages/",
-      "outputPath": "/Users/amorfati/Desktop/dotnet-deneme/Calisma-indexer/obj/",
+      "outputPath": "/Users/amorfati/Desktop/dotnet-deneme/calisma04-indexer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/amorfati/.nuget/NuGet/NuGet.Config"

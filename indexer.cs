@@ -10,11 +10,12 @@ namespace Calisma_indexer
         Pazartesi,
         Sali,
         Carsamba,
-        Persembe, 
+        Persembe,
         Cuma,
         Cumartesi,
         Pazar
     }
+
     class CokBoyutluIndexer
     {
         private int[,] dizi1;
@@ -53,7 +54,7 @@ namespace Calisma_indexer
     }
     class IndeksIslem
     {
-      private int[] dizi;
+        private int[] dizi;
         public IndeksIslem(int DiziUzunlugu)
         {
             dizi = new int[DiziUzunlugu];
@@ -87,14 +88,17 @@ namespace Calisma_indexer
         {
             get
             {
-                return sayi;//indeks * indeks;
+                return indeks; //* indeks;//sayi;//
             }
             set
             {
                 sayi = value;
             }
         }
+
+
     }
+
     class Program
     {
         static void DiziYaz(Array dizi, BICIM b)
@@ -112,22 +116,48 @@ namespace Calisma_indexer
 
         static void Main(string[] args)
         {
-            Indexers i = new Indexers();
-            Console.WriteLine("i[1.2]={0}", i[1.2]);
-            i[5] = 2 * i[1.2];
-            Console.WriteLine(i.sayi);
-            //i[6] = 9;
-            Console.WriteLine(i.sayi);
-            Console.WriteLine("i[5]={0}", i[5]);
-            Console.WriteLine("i[6]={0}", i[6]);
+
+        //     class Indexers
+        // {
+        //     public double sayi;
+        //     public double this[double indeks]
+        //     {
+        //         get
+        //         {
+        //             return indeks * indeks;//sayi;//
+        //         }
+        //         set
+        //         {
+        //             sayi = value;
+        //         }
+        //     }
+
+
+        // }
+        Indexers indeks = new Indexers();
+        Console.WriteLine("i[1.2]={0}", indeks[1.2]);
+            indeks[5] = 2 * indeks[1.2];
+            Console.WriteLine(indeks.sayi);
+            indeks[6] = 9;
+            indeks[6] = 8;
+            indeks[7] = 8;
+            indeks[8] = 8;
+            Console.WriteLine(indeks[7].Equals(indeks[6]));
+            Console.WriteLine(indeks.sayi.Equals(indeks.sayi));
+            
+            Console.WriteLine(indeks.sayi);
+            Console.WriteLine("i[5]={0}", indeks[5]);
+            Console.WriteLine("i[6]={0}", indeks[6]);
+            Console.WriteLine("i[7]={0}", indeks[7]);
+            Console.WriteLine("i[8]={0}", indeks[8]);
 
             IndeksIslem a = new IndeksIslem(7); // Burada dinamik boyutlu diziler tanımlıyoruz
-            IndeksIslem b = new IndeksIslem(8);
+        IndeksIslem b = new IndeksIslem(8);
 
-            int[] z = new int[5];
-            DiziYaz(z, BICIM.DIKEY);
+        int[] z = new int[5];
+        DiziYaz(z, BICIM.DIKEY);
 
-            for (int j = 0; j < a.DiziBoyut; ++j) // burada DiziBoyut "Lenght" metodunun görevini görür bunu biz 
+            for (int j = 0; j<a.DiziBoyut; ++j) // burada DiziBoyut "Lenght" metodunun görevini görür bunu biz 
                                                   // metot olarak IndeksIslem sınıfında tanımladık
             {
                 a[j] = j + 1; // --> value => dizi[indeks] burada j+1 değerini x[j] ye atar
@@ -139,23 +169,30 @@ namespace Calisma_indexer
 
 
 
-            CokBoyutluIndexer c = new CokBoyutluIndexer(10, 7);
+    CokBoyutluIndexer c = new CokBoyutluIndexer(10, 7);
 
-            for (int y = 0; y < c.Boyut1; ++y)
-                for (int x = 0; x < c.Boyut2; ++x)
+            for (int y = 0; y<c.Boyut1; ++y)
+                for (int x = 0; x<c.Boyut2; ++x)
                     c[y, x] = y + x;
 
-            for (int y = 0; y < c.Boyut1; ++y)
+            for (int y = 0; y<c.Boyut1; ++y)
             {
-                for (int x = 0; x < c.Boyut2; ++x)
+                for (int x = 0; x<c.Boyut2; ++x)
                     Console.Write("{0,4} ", c[y, x]);
                 Console.WriteLine();
 
             }
 
-            string[] Gunler = HaftaninGunleri.GetNames(typeof(HaftaninGunleri));
-            foreach (string g in Gunler)
-                Console.WriteLine(g);
+string[] Gunler = HaftaninGunleri.GetNames(typeof(HaftaninGunleri));
+foreach (string g in Gunler)
+    Console.WriteLine(g);
+
+
+string[] bicim = BICIM.GetNames(typeof(BICIM));
+foreach (string g in bicim)
+    Console.WriteLine("\n" + g);
+
+                
 
 
 
